@@ -14,6 +14,28 @@ public class InsertionSort {
 
     }
 
+    public static void insertionSort1(int[] array) {
+
+
+        for (int i = 0; i < array.length; i++) {
+
+            boolean isTrue = false;
+
+
+            for (int j = 0; j < array.length-1; j++) {
+
+                if (array[j] > array[j + 1]) {
+                    int value = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = value;
+                    isTrue=true;
+                }
+            }
+            if (!isTrue){
+                break;
+            }
+        }
+    }
 
     public static void insertionSort(int[] array) {
 
